@@ -1,0 +1,388 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+  padding-top: 1rem;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 23.3rem;
+  top: 4.5rem;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* .dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.nav-tabs:hover .dropdown-content {
+  display: block;
+} */
+
+.logo-div img {
+  width: 5rem;
+}
+
+.logo-div {
+  display: flex;
+  align-items: center;
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-size: 1.2rem;
+
+  padding-left: 2rem;
+}
+
+.nav-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-family: Arial, Helvetica, sans-serif;
+  gap: 2rem;
+  padding-right: 3rem;
+}
+
+.nav-tabs a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-tabs img {
+  width: 1rem;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-icons img {
+  width: 1.5rem;
+  cursor: pointer;
+}
+
+/* View mens products */
+/* Main Container Styling */
+.view-mens-products {
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+  margin-top: 4rem;
+}
+
+.products {
+  width: 100%;
+  overflow-x: auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.product-table thead {
+  background-color: #2c3e50;
+  color: white;
+}
+
+.product-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+.product-table tbody tr {
+  border-bottom: 1px solid #e0e0e0;
+  transition: background-color 0.2s;
+}
+
+.product-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.product-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.product-table td {
+  padding: 1rem;
+  vertical-align: middle;
+  word-wrap: break-word;
+}
+
+.product-table td img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+  object-fit: contain;
+  height: 180px;
+  width: 180px;
+}
+
+.btn {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  height: 11rem;
+}
+
+.order-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  margin-right: 5rem;
+}
+
+.order-btn {
+  background-color: rgb(1, 200, 1);
+  color: white;
+}
+
+.order-btn:hover {
+  background-color: rgb(21, 21, 186);
+}
+
+/* Footer Styles */
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 3rem 0 0;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.footer-section {
+  margin-bottom: 2rem;
+}
+
+.footer-section h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.footer-section p {
+  margin-bottom: 1rem;
+  color: #bbb;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.8rem;
+}
+
+.footer-section ul li a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #57b4ba;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.social-icons a {
+  color: #fff;
+  background-color: #444;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #57b4ba;
+  transform: translateY(-3px);
+}
+
+.newsletter-form {
+  display: flex;
+  margin-top: 1.5rem;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  font-family: "Inter", sans-serif;
+}
+
+.newsletter-form button {
+  background-color: #57b4ba;
+  color: white;
+  border: none;
+  padding: 0 1.5rem;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #4a9ca1;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 1.5rem 0;
+  background-color: #111;
+  margin-top: 2rem;
+}
+
+.footer-bottom p {
+  color: #bbb;
+  font-size: 0.9rem;
+}
+
+/* Price Filter Styles */
+.price-filter {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.price-filter h3 {
+  margin-top: 0;
+  color: #2c3e50;
+  font-family: "Inter", sans-serif;
+}
+
+.filter-options {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.filter-select {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-family: "Inter", sans-serif;
+  width: 200px;
+}
+
+.filter-btn {
+  padding: 0.5rem 1rem;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filter-btn:hover {
+  background-color: #1a252f;
+}
+
+/* Accessories filter style */
+.price-filter {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.price-filter h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  font-family: "Inter", sans-serif;
+}
+
+.filter-options {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.filter-select {
+  padding: 0.6rem;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-family: "Inter", sans-serif;
+  min-width: 150px;
+}
+
+.filter-btn {
+  padding: 0.6rem 1.2rem;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.filter-btn:hover {
+  background-color: #1a252f;
+}
+
+select.filter-select option[selected] {
+  background-color: #2c3e50;
+  color: white;
+}
